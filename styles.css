@@ -1,0 +1,244 @@
+/* @import url(/assets/fonts/Karla-VariableFont_wght.ttf); */
+
+@font-face {
+    font-family: "Karla";
+    src: url("/assets/fonts/Karla-VariableFont_wght.ttf") format("truetype");
+    font-weight: 200;
+    font-style: normal;
+}
+
+body {
+    background-color: rgb(224 241 231);
+    font-family: "Karla", sans-serif;
+
+}
+
+.reg {
+    height: auto;
+    width: 550px;
+    padding-bottom: 10px;
+    background-color: white;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 20px;
+    cursor: pointer;
+
+}
+
+.cu {
+    padding-top: 25px;
+    padding-left: 12px;
+    font-weight: 1000;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    margin: 10px 0px;
+    height: 40px;
+    width: 100%;
+    border-radius: 5px;
+    border-width: 1px;
+    border: 1px solid black;
+    cursor: pointer;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    opacity: 1;
+}
+
+textarea {
+    margin-bottom: 10px;
+}
+
+/* .em {
+    padding-left: 12px;
+} */
+
+/* .email {
+    margin: 10px 12px;
+    width: 92%;
+} */
+
+.q {
+    font-size: x-small;
+}
+
+.rad {
+    border: 1px solid black;
+    margin: 10px 14px;
+    height: 40px;
+    width: 247px;
+    border-radius: 5px;
+    padding-top: 6px;
+    text-align: left;
+    padding-left: 12px;
+
+}
+
+.rad input.ri {
+    height: 20px;
+    width: 20px;
+    margin: 2px;
+}
+
+.form-check-input {
+    transform: scale(1);
+}
+
+.msg {
+    border-radius: 7px;
+    /* margin: 10px 12px; */
+    width: 100%;
+    height: 85px;
+    border: 1px solid black;
+}
+
+.msg:hover {
+    border: 1px solid hsl(169.38deg 82.48% 26.86%);
+}
+
+.ch {
+    padding-left: 10px;
+}
+
+.sub {
+    margin: 10px 12px;
+    width: 95%;
+    background-color: hsl(169.38deg 82.48% 26.86%);
+    color: white;
+}
+
+.sub:hover {
+    background-color: hsl(170.53deg 82.61% 13.53%);
+}
+
+.sub:active {
+    background-color: hsl(170.53deg 82.61% 13.53%);
+}
+
+.sub:focus {
+    background-color: hsl(170.53deg 82.61% 13.53%);
+}
+
+input:hover {
+    border: 1px solid hsl(169.38deg 82.48% 26.86%);
+}
+
+.rad:hover {
+    border: 1px solid hsl(169, 73%, 32%);
+    background-color: hsl(144.71deg 37.78% 91.18%);
+}
+
+input:focus {
+    border: 1px solid hsl(169.38deg 82.48% 26.86%);
+}
+
+input:focus-visible {
+    border: 1px solid hsl(169.38deg 82.48% 26.86%);
+    outline: 1px solid hsl(169.38deg 82.48% 26.86%);
+}
+
+.rad:focus {
+    border: 1px solid hsl(169, 73%, 32%);
+    background-color: hsl(144.71deg 37.78% 91.18%);
+}
+
+.rad:active {
+    border: 1px solid hsl(169, 73%, 32%);
+    background-color: hsl(144.71deg 37.78% 91.18%);
+}
+
+.msg:focus {
+    border: 1px solid hsl(169.38deg 82.48% 26.86%);
+    outline: 1px solid hsl(169.38deg 82.48% 26.86%);
+    ;
+}
+
+/* radio button */
+.query-wrapper {
+    display: flex;
+    gap: 12px;
+}
+
+.query-box {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.query-box input[type="radio"] {
+    width: 20px;
+    height: 16px;
+}
+
+/* Change box background when radio is checked */
+.query-box:has(input[type="radio"]:checked) {
+    background: #dff1ea;
+    border-color: #0f7a5f;
+    accent-color: #0f7a5f;
+    cursor: pointer;
+}
+
+.query-box:has(input[type="radio"]:checked) span {
+    color: #0f7a5f;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.query-box.active {
+    background: #dff1ea;
+    border: 1px solid #0f7a5f;
+}
+
+.query-box.active span {
+    color: #0f7a5f;
+}
+
+.required{
+    color: green;
+}
+
+.error-border{
+    border: 1px solid red !important;
+}
+
+.error-msg{
+    color: red;
+    font-size: 12px;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width:500px) {
+    .rad {
+        width: 92%;
+        margin-left: 12px;
+        margin-right: 20px;
+    }
+
+    .reg {
+        height: auto;
+        width: 295px;
+        background-color: white;
+        margin: auto;
+        margin-top: 40px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+
+    .msg {
+        width: 270px;
+        height: 140px;
+    }
+
+}
+
